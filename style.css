@@ -1012,3 +1012,46 @@ body {
   width: 24px;
   height: 24px;
 }
+
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        display: none; /* Nasconde il menu */
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar ul.active {
+        display: flex; /* Mostra il menu quando attivo */
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenitore {
+        width: 90%; /* Riduce la larghezza per evitare troppo spazio ai lati */
+        margin: auto;
+        text-align: center;
+    }
+
+    .titolo {
+        font-size: 24px; /* Riduce la dimensione dei titoli */
+    }
+
+    .bottone {
+        width: 100%; /* Rende i bottoni più grandi e facili da cliccare */
+        padding: 15px;
+    }
+}
