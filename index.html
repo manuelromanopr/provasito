@@ -461,31 +461,12 @@
           </div>
         </div>
       </div>
-  @media (max-width: 768px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar ul {
-        display: none; /* Nasconde il menu */
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
-
-    .navbar ul.active {
-        display: flex; /* Mostra il menu quando attivo */
-    }
-
-    .menu-icon {
-        display: block;
-        font-size: 24px;
-        cursor: pointer;
-    }
-}
-
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+<ul class="navbar-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Chi Sono</a></li>
+    <li><a href="#">Abbonamenti</a></li>
+</ul>
   <!-- Collegamento al file JavaScript per le animazioni -->
   <script src="script_updated.js"></script>
 </body>
