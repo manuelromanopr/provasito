@@ -1055,3 +1055,9 @@ body {
         padding: 15px;
     }
 }
+section {
+    min-height: 100vh; /* Usa altezza minima invece di fissa */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
